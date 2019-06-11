@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+p,
+h1,
+h3 {
+    text-align: center;
+}
+
+.ps {
+    text-align: center;
+    font-size: 8px;
+    font-style: oblique;
+}
+
+.info {
+   font-size: 16px;
+}
+        
+.result {
+    font-size: 16px;
+}
+        
+body {
+    background: url(../images/bg-index.jpg) no-repeat center center;
+}
