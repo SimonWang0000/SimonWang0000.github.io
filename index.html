@@ -6,38 +6,38 @@
     
     <head>
         <link href="./files/index.css" rel="stylesheet" type="text/css">
+        <script>
+            function jump() {
+                location.href = "result.html?" +
+                                "testId=" + document.getElementById("testID").value +
+				                "&id=" + document.getElementById("ID").value +
+				                "&name=" + document.getElementById("Name").value +
+                                "&isText=" + document.getElementById("isText").checked +
+				                "&chinese=" + document.getElementById("Chinese").value +
+				                "&math=" + document.getElementById("Math").value +
+				                "&english=" + document.getElementById("English").value +
+				                "&like=" + document.getElementById("Like").value +
+				                "&sum=" +  document.getElementById("Sum").value;
+            }
+
+            function customText() {
+                if(document.getElementById("isText").checked) {
+				    var inputs = document.getElementsByName("Subject");
+				    for(var i = 0; i < inputs.length; i++) {
+                        inputs[i].type = "text";
+				    }
+				    document.getElementById("SumP").style.display = "block";
+                } else {
+				    var inputs = document.getElementsByName("Subject");
+				    for(var i = 0; i < inputs.length; i++) {
+                        inputs[i].type = "number";
+                    }
+				    document.getElementById("SumP").style.display = "none";
+                }
+            }
+
+        </script>
     </head>
-
-	<script>
-		function jump() {
-			location.href = "result.html?" +
-				"testId=" + document.getElementById("testID").value +
-				"&id=" + document.getElementById("ID").value +
-				"&name=" + document.getElementById("Name").value +
-				"&isText=" + document.getElementById("isText").checked +
-				"&chinese=" + document.getElementById("Chinese").value +
-				"&math=" + document.getElementById("Math").value +
-				"&english=" + document.getElementById("English").value +
-				"&like=" + document.getElementById("Like").value +
-				"&sum=" +  document.getElementById("Sum").value;
-		}
-
-		function customText() {
-			if(document.getElementById("isText").checked) {
-				var inputs = document.getElementsByName("Subject");
-				for(var i = 0; i < inputs.length; i++) {
-					inputs[i].type = "text";
-				}
-				document.getElementById("SumP").style.display = "block";
-			} else {
-				var inputs = document.getElementsByName("Subject");
-				for(var i = 0; i < inputs.length; i++) {
-					inputs[i].type = "number";
-				}
-				document.getElementById("SumP").style.display = "none";
-			}
-		}
-	</script>
 
 	<body>
 		<h1 style="color:#66CCFF">假的高考</h1>
