@@ -4,12 +4,45 @@ p,
 h1,
 h3 {
     text-align: center;
+    color: white;
+}
+
+.warn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 8px;
+    font-style: oblique;
+    color: red;
+}
+
+.hr-top {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 4em;
+    -webkit-margin-start: 20em;
+    -webkit-margin-end: 20em;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.hr-foot {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: 2em;
+    -webkit-margin-end: 2em;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .ps {
     text-align: center;
     font-size: 8px;
     font-style: oblique;
+    color: antiquewhite;
 }
 
 .info {
@@ -21,5 +54,11 @@ h3 {
 }
         
 body {
-    background: url(../images/bg-index.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/index-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
