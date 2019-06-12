@@ -37,22 +37,7 @@ h3 {
     border-style: inset;
     border-width: 1px;
 }
-
-.ps {
-    text-align: center;
-    font-size: 8px;
-    font-style: oblique;
-    color: antiquewhite;
-}
-
-.info {
-   font-size: 16px;
-}
-        
-.result {
-    font-size: 16px;
-}
-        
+   
 body {
     height: 100%;
     width: 100%;
