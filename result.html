@@ -18,8 +18,8 @@
                     infoTable.rows[i].cells[1].innerHTML = decodeURI(params[i].substring(params[i].indexOf('=') + 1)); 
                 } 
                 var resultTable = document.getElementById("result");
-                for(var i = 1; i < resultTable.rows.length - 1; i++) { 
-                    resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i + 3].substring(params[i + 3].indexOf('=') + 1)); 
+                for(var i = 1; i < resultTable.rows.length - 1; i++) {
+                    resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i + 3].substring(params[i + 3].indexOf('=') + 1));
                 }
                 if(params[3].substring(params[3].indexOf('=') + 1) == "false") {
                     var sum = 0;
@@ -29,7 +29,7 @@
                     resultTable.rows[resultTable.rows.length - 1].cells[1].innerHTML = sum;
                 } else {
                     var i = resultTable.rows.length - 1;
-                    resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i].substring(params[i].indexOf('=') + 1));
+                    resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i + 3].substring(params[i + 3].indexOf('=') + 1));
                 }
             }
         </script>
@@ -50,7 +50,7 @@
 		<div class="topdown"></div>
 		<div class="main2">
 			<div style="height: 35px;"></div>
-			<div class="sub_title">2018年河北省普通高校招生考试成绩查询</div>
+			<div class="sub_title">2019年河北省普通高校招生考试成绩查询</div>
 			<hr class="line">
 			<br>
 			<fieldset style="width:290px; margin: 0px auto; border: 1px solid #006AC0;">
