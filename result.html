@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
-
-	<head>
+    <head>
         <title>成绩查询</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="pragma" content="no-cache">
-		<meta http-equiv="cache-control" content="no-cache">
-		<meta http-equiv="expires" content="-1">
-		<link href="./files/result.css" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+        <link href="./files/result.css" rel="stylesheet" type="text/css">
         <script>
             window.onload = function() {
                 var url_params = location.search.substring(1);
@@ -16,7 +15,8 @@
                 var infoTable = document.getElementById("info");
                 for(var i = 0; i < infoTable.rows.length; i++) {
                     infoTable.rows[i].cells[1].innerHTML = decodeURI(params[i].substring(params[i].indexOf('=') + 1)); 
-                } 
+                }
+                
                 var resultTable = document.getElementById("result");
                 for(var i = 1; i < resultTable.rows.length - 1; i++) {
                     resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i + 3].substring(params[i + 3].indexOf('=') + 1));
@@ -24,7 +24,7 @@
                 if(params[3].substring(params[3].indexOf('=') + 1) == "false") {
                     var sum = 0;
                     for(var i = 1; i < resultTable.rows.length - 1; i++) { 
-				        sum += parseInt(resultTable.rows[i].cells[1].innerHTML);
+                        sum += parseInt(resultTable.rows[i].cells[1].innerHTML);
                     }
                     resultTable.rows[resultTable.rows.length - 1].cells[1].innerHTML = sum;
                 } else {
