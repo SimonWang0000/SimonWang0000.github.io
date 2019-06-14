@@ -19,23 +19,14 @@ h3 {
 }
 
 .hr-top {
-    display: block;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 2em;
-    -webkit-margin-start: 20em;
-    -webkit-margin-end: 20em;
-    border-style: inset;
-    border-width: 1px;
+    width: 40%;
+    border-bottom: 2px soild #fff;
+    margin: 5px auto;
 }
 
 .hr-foot {
-    display: block;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
-    -webkit-margin-start: 2em;
-    -webkit-margin-end: 2em;
-    border-style: inset;
-    border-width: 1px;
+    width: 90%;
+    margin: 8px auto;
 }
 
 body {
