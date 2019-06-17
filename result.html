@@ -21,7 +21,7 @@
                 for(var i = 1; i < resultTable.rows.length - 1; i++) {
                     resultTable.rows[i].cells[1].innerHTML = decodeURI(params[i + 3].substring(params[i + 3].indexOf('=') + 1));
                 }
-                if(params[3].substring(params[3].indexOf('=') + 1).equals("false") {
+                if(params[3].substring(params[3].indexOf('=') + 1) == "false") {
                     var sum = 0;
                     for(var i = 1; i < resultTable.rows.length - 1; i++) { 
                         sum += parseInt(resultTable.rows[i].cells[1].innerHTML);
